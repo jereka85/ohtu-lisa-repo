@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"path": "../.."
+		},
+		{
+			"path": "../../../uv-testi"
+		},
+		{
+			"path": "../../../uv-testi/src"
+		}
+	],
+	"settings": {}
+}
