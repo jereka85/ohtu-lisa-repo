@@ -17,5 +17,8 @@ class ProjectReader:
         return Project(data["project"]["name"],
                        data["project"]["description"],
                        data["project"]["dependencies"],
-                       data["dependency-groups"]["dev"]
+                       data["dependency-groups"]["dev"],
+                       data["project"]["requires-python"],
+                       data["project"]["license"],
+                       data["project"]["authors"]
                         )
