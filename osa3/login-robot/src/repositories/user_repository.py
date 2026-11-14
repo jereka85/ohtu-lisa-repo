@@ -26,7 +26,7 @@ class UserRepository:
         existing_user = self.find_by_username(user.username)
 
         if existing_user:
-            raise Exception(
+            raise Exception(  # noqa: TRY002
                 f"User with username {user.username} already exists"
             )
 

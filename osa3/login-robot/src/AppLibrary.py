@@ -1,7 +1,7 @@
-from stub_io import StubIO
+from app import App
 from repositories.user_repository import UserRepository
 from services.user_service import UserService
-from app import App
+from stub_io import StubIO
 
 
 class AppLibrary:
@@ -31,3 +31,8 @@ class AppLibrary:
 
     def create_user(self, username, password):
         self._user_service.create_user(username, password)
+        self._io.write("New user registered")
+
+#    def create_wrong_user(self, username, password, value):
+#        self._user_service.create_user(username, password)
+#        return output_should_contain(self, value)

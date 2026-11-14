@@ -1,7 +1,7 @@
+from app import App
+from console_io import ConsoleIO
 from repositories.user_repository import UserRepository
 from services.user_service import UserService
-from console_io import ConsoleIO
-from app import App
 
 
 def main():
